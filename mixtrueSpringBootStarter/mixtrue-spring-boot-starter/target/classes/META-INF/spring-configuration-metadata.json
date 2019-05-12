@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "demo.starter",
+      "type": "com.javaliu.boot.starter.demo.StarterServiceProperties",
+      "sourceType": "com.javaliu.boot.starter.demo.StarterServiceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "demo.starter.config",
+      "type": "java.lang.String",
+      "sourceType": "com.javaliu.boot.starter.demo.StarterServiceProperties"
+    }
+  ],
+  "hints": []
+}

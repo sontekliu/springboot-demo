@@ -5,7 +5,7 @@
 
   <groupId>com.javaliu.boot</groupId>
   <artifactId>mixtrue-spring-boot-starter</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <description>Spring boot starter demo</description>
 
   <name>mixtrue-spring-boot-starter</name>
@@ -33,6 +33,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-autoconfigure</artifactId>
       <version>2.1.4.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.10</version>
     </dependency>
   </dependencies>
 

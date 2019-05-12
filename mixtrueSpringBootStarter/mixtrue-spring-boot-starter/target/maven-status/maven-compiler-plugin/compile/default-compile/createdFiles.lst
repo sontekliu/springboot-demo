@@ -1,0 +1,4 @@
+com/javaliu/boot/starter/demo/StarterAutoConfigure.class
+com/javaliu/boot/starter/demo/StarterService.class
+META-INF/spring-configuration-metadata.json
+com/javaliu/boot/starter/demo/StarterServiceProperties.class
