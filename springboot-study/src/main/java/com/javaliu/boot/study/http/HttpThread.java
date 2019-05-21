@@ -6,7 +6,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
 
 /**
  * 描 述：  TODO
@@ -31,6 +30,7 @@ public class HttpThread extends Thread{
         try {
             CloseableHttpResponse response = closeableHttpClient.execute(httpGet);
             System.out.println(EntityUtils.toString(response.getEntity()));
+            EntityUtils.consume(response.getEntity());
         } catch (IOException e) {
             e.printStackTrace();
         }

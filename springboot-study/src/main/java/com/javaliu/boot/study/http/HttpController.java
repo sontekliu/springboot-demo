@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
@@ -28,6 +29,7 @@ public class HttpController {
      */
     @RequestMapping(value = "testConnectRequestTimeout", method = RequestMethod.GET)
     public String testConnectRequestTimeout() throws InterruptedException {
+        log.info("receive request ===============");
         Thread.sleep(500);
         return "connectionRequestTimeout";
     }
@@ -37,8 +39,10 @@ public class HttpController {
      * @return
      * @throws InterruptedException
      */
+    @ResponseBody
     @RequestMapping(value = "testSocketTimeout", method = RequestMethod.GET)
     public String testSocketTimeout() throws InterruptedException {
+        log.info("receive request ===============");
         Thread.sleep(3000);
         return "testSocketTimeout";
     }
@@ -50,6 +54,7 @@ public class HttpController {
      */
     @RequestMapping(value = "testSocketTimeout2", method = RequestMethod.GET)
     public void testSocketTimeout2(HttpServletResponse response) throws Exception {
+        log.info("receive request ===============");
         for (int i=0;i<10;i++){
             response.getWriter().println("This is number : " + i);
             response.flushBuffer();
